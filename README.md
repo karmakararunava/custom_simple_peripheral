@@ -48,7 +48,7 @@
 /*****************************************************************************
 
  @date of origin:-		28/10/2017
- @description:-			custom simple peripheral project under progress
+ @description:-			custom_simple_peripheral project under progress
 
  *****************************************************************************
 
