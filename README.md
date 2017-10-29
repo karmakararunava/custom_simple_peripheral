@@ -1,8 +1,8 @@
 /******************************************************************************
 
- @<fieldset></fieldset>README.md
+ @file		README.md
 
- @brief	description of custom simple_peripheral project.
+ @brief		description of custom simple_peripheral project.
 
  Group: WCS, BTS
  Target Device: CC2650, CC2640, CC1350
@@ -61,6 +61,11 @@
  @date of updation:-	29/10/2017
  @description:-			added license description to README.md - UART task not 
  						yet enabled
+
+ *****************************************************************************
+
+ @date of updation:-	29/10/2017
+ @description:-			improvement of README.md - UART task not yet enabled
 
  *****************************************************************************
 
