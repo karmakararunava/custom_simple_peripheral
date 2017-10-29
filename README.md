@@ -59,13 +59,19 @@
  *****************************************************************************
 
  @date of updation:-	29/10/2017
- @description:-			added license description to README.md - UART task not 
- 						yet enabled
+ @description:-			added license description to README.md - UART task 
+ 						not yet enabled
 
  *****************************************************************************
 
  @date of updation:-	29/10/2017
  @description:-			improvement of README.md - UART task not yet enabled
+
+ *****************************************************************************
+
+ @date of updation:-	30/10/2017
+ @description:-			UART echo functionality added - adding of UART for
+ 						data transfer from app under progress
 
  *****************************************************************************
 

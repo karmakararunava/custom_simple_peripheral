@@ -194,7 +194,6 @@ PIN_Handle radCtrlHandle;
 
 PIN_Config ledPinTable[] = {
     Board_LED1 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
-    Board_LED2 | PIN_GPIO_OUTPUT_EN | PIN_GPIO_LOW | PIN_PUSHPULL | PIN_DRVSTR_MAX,
     PIN_TERMINATE
 };
 
@@ -340,22 +339,23 @@ int main()
 
   // new added for uart starts here
 
-  // Construct BIOS objects
-  //Task_Params_init(&taskParams);
-  //taskParams.stackSize = TASKSTACKSIZE;
-  //taskParams.stack = &task0Stack;
-  //Task_construct(&task0Struct, (Task_FuncPtr)echoFxn, &taskParams, NULL);
 
   // Open LED pins
-
   ledPinHandle = PIN_open(&ledPinState, ledPinTable);
   if(!ledPinHandle) {
       System_abort("Error initializing board LED pins\n");
   }
 
 
+  // Construct BIOS objects
+  Task_Params_init(&taskParams);
+  taskParams.stackSize = TASKSTACKSIZE;
+  taskParams.stack = &task0Stack;
+  Task_construct(&task0Struct, (Task_FuncPtr)echoFxn, &taskParams, NULL);
+  
+
+  // high on green LED
   PIN_setOutputValue (ledPinHandle, Board_LED1, 1);
-  //PIN_setOutputValue (ledPinHandle, Board_LED0, 1);
 
 
   // new added for uart ends here
