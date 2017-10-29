@@ -44,15 +44,23 @@
  Release Date: 2016-10-26 15:20:04
  *****************************************************************************/
 
+
 /*****************************************************************************
 
- @date of origin:-	28/10/2017
- @description:-		custom simple peripheral project under progress
+ @date of origin:-		28/10/2017
+ @description:-			custom simple peripheral project under progress
 
  *****************************************************************************
 
  @date of updation:-	29/10/2017
- @description:-		adding of UART under progress - UART task not yet enabled
+ @description:-			adding of UART under progress - UART task not yet 
+ 						enabled
+
+ *****************************************************************************
+
+ @date of updation:-	29/10/2017
+ @description:-			added license description to README.md - UART task not 
+ 						yet enabled
 
  *****************************************************************************
 
