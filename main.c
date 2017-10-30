@@ -239,7 +239,7 @@ Void echoFxn(UArg arg0, UArg arg1)
         System_abort("Error opening the UART");
     }
 
-    UART_write(uart, echoPrompt, sizeof(echoPrompt));
+    //UART_write(uart, echoPrompt, sizeof(echoPrompt));
 
     /*
     // Loop forever echoing
@@ -257,7 +257,7 @@ Void echoFxn(UArg arg0, UArg arg1)
     // UART tx test
     int i = 0;
     while ( i<= 3) {
-      UART_write(uart, "UART transmit successful...", 27);
+      UART_write(uart, "\nUART write successful...", 25);
       i++;
     }
     /**/
