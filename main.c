@@ -241,11 +241,31 @@ Void echoFxn(UArg arg0, UArg arg1)
 
     UART_write(uart, echoPrompt, sizeof(echoPrompt));
 
+    /*
     // Loop forever echoing
     while (1) {
         UART_read(uart, &input, 1);
         UART_write(uart, &input, 1);
     }
+    */
+    
+    
+
+    // new for UART tx added starts here
+    
+    /**/
+    // UART tx test
+    int i = 0;
+    while ( i<= 3) {
+      UART_write(uart, "UART transmit successful...", 27);
+      i++;
+    }
+    /**/
+
+    // new for UART tx added ends here
+
+
+
 }
 
 // new added for uart ends here

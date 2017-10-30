@@ -75,4 +75,11 @@
 
  *****************************************************************************
 
+ @date of updation:-	31/10/2017
+ @description:-			UART echo functionality disabled - string written to 
+ 						console by CC2650 LaunchPad using UART - UART for 
+ 						data transfer from app under progress
+
+ *****************************************************************************
+
  *****************************************************************************/
