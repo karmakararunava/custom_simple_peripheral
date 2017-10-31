@@ -143,6 +143,7 @@ bleUserCfg_t user0Cfg = BLE_USER_CFG;
 Task_Struct task0Struct;
 Char task0Stack[TASKSTACKSIZE];
 
+
 // new added for uart ends here
 
 
@@ -159,6 +160,8 @@ Char task0Stack[TASKSTACKSIZE];
 
 // Global memory storage for a PIN_Config table
 static PIN_State ledPinState;
+
+
 
 // new added for uart ends here
 
@@ -239,29 +242,29 @@ Void echoFxn(UArg arg0, UArg arg1)
         System_abort("Error opening the UART");
     }
 
-    //UART_write(uart, echoPrompt, sizeof(echoPrompt));
+    UART_write(uart, echoPrompt, sizeof(echoPrompt));
 
-    /*
+    /**/
     // Loop forever echoing
     while (1) {
         UART_read(uart, &input, 1);
         UART_write(uart, &input, 1);
     }
-    */
-    
+    /**/
+
     
 
     // new for UART tx added starts here
     
-    /**/
+    /*
     // UART tx test
     int i = 0;
     while ( i<= 3) {
       UART_write(uart, "\nUART write successful...", 25);
       i++;
     }
-    /**/
-
+    */
+    
     // new for UART tx added ends here
 
 

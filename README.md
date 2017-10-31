@@ -91,4 +91,19 @@
 
  *****************************************************************************
 
+ @date of updation:-	31/10/2017
+ @description:-			UART echo functionality disabled - unedited 
+ 						simple_gatt_profile.c, simple_gatt_profile.h added - 
+ 						UART for data transfer from app under progress
+
+ *****************************************************************************
+
+ @date of updation:-	31/10/2017
+ @description:-			UART echo functionality enabled - unedited 
+ 						peripheral.h, peripheral.c, simple_peripheral.h, 
+ 						simple_peripheral.c added to project - UART for data 
+ 						transfer from app under progress
+
+ *****************************************************************************
+
  *****************************************************************************/
