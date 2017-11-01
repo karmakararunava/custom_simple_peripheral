@@ -215,6 +215,14 @@ extern Display_Handle dispHandle;
 
 
 
+// new added for uart app tx starts here
+
+extern uint8 customPassWriteBuffer (uint8_t *custom_pValue);
+
+// new added for uart app tx ends here
+
+
+
 // new added for uart starts here
 
 /*
@@ -253,6 +261,13 @@ Void echoFxn(UArg arg0, UArg arg1)
     /**/
 
     
+    // new added for uart app tx starts here
+
+    customPassWriteBuffer();
+
+    // new added for uart app tx starts here
+
+
 
     // new for UART tx added starts here
     

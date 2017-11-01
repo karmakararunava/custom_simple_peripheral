@@ -655,6 +655,17 @@ static bStatus_t simpleProfile_ReadAttrCB(uint16_t connHandle,
 
 
 
+
+// new added for uart app tx starts here
+
+// prototype declaration
+extern uint8 customPassWriteBuffer (uint8_t *custom_pValue);
+
+// new added for uart app tx starts here
+
+
+
+
 /*********************************************************************
  * @fn      simpleProfile_WriteAttrCB
  *
@@ -721,6 +732,21 @@ static bStatus_t simpleProfile_WriteAttrCB(uint16_t connHandle,
       case GATT_CLIENT_CHAR_CFG_UUID:
         status = GATTServApp_ProcessCCCWriteReq( connHandle, pAttr, pValue, len,
                                                  offset, GATT_CLIENT_CFG_NOTIFY );
+        
+
+
+        // new added for uart app tx starts here
+
+        // definition
+        extern uint8 customPassWriteBuffer (uint8_t *custom_pValue) {
+          *custom_pValue = *pValue;
+          return *custom_pValue;
+        }
+
+        // new added for uart app tx starts here
+
+
+
         break;
         
       default:
