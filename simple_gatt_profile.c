@@ -659,7 +659,7 @@ static bStatus_t simpleProfile_ReadAttrCB(uint16_t connHandle,
 // new added for uart app tx starts here
 
 // prototype declaration
-extern uint8 customPassWriteBuffer (uint8_t *custom_pValue);
+extern uint8_t customPassWriteBuffer ();
 
 // new added for uart app tx starts here
 
@@ -737,12 +737,13 @@ static bStatus_t simpleProfile_WriteAttrCB(uint16_t connHandle,
 
         // new added for uart app tx starts here
 
+        uint8_t *custom_pValue;
         // definition
-        extern uint8 customPassWriteBuffer (uint8_t *custom_pValue) {
+        extern uint8_t customPassWriteBuffer () {
           *custom_pValue = *pValue;
           return *custom_pValue;
         }
-
+        
         // new added for uart app tx starts here
 
 

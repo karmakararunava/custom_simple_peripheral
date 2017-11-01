@@ -1,0 +1,3 @@
+Error[Pe065]: expected a ";" C:\ti\simplelink\ble_sdk_2_02_01_18\src\profiles\simple_profile\cc26xx\simple_gatt_profile.c 742 
+
+Warning[Pe012]: parsing restarts here after previous syntax error C:\ti\simplelink\ble_sdk_2_02_01_18\src\profiles\simple_profile\cc26xx\simple_gatt_profile.c 751 
