@@ -154,6 +154,19 @@ extern bStatus_t SimpleProfile_SetParameter( uint8 param, uint8 len, void *value
 extern bStatus_t SimpleProfile_GetParameter( uint8 param, void *value );
 
 
+
+
+
+// new added for uart app tx starts here
+
+// prototype declaration
+extern uint8_t customPassWriteBuffer ();
+
+// new added for uart app tx starts here
+
+
+
+
 /*********************************************************************
 *********************************************************************/
 

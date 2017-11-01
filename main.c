@@ -214,15 +214,6 @@ extern void AssertHandler(uint8 assertCause, uint8 assertSubcause);
 extern Display_Handle dispHandle;
 
 
-
-// new added for uart app tx starts here
-
-extern uint8_t customPassWriteBuffer ();
-
-// new added for uart app tx ends here
-
-
-
 // new added for uart starts here
 
 /*

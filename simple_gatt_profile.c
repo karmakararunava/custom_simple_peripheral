@@ -653,19 +653,6 @@ static bStatus_t simpleProfile_ReadAttrCB(uint16_t connHandle,
   return ( status );
 }
 
-
-
-
-// new added for uart app tx starts here
-
-// prototype declaration
-extern uint8_t customPassWriteBuffer ();
-
-// new added for uart app tx starts here
-
-
-
-
 /*********************************************************************
  * @fn      simpleProfile_WriteAttrCB
  *

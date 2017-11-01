@@ -120,4 +120,13 @@
 
  *****************************************************************************
 
+ @date of updation:-	01/11/2017
+ @description:-			main.c: ln 255, 
+ 						simple_gatt_profile.c: ln 725, 
+ 						simple_gatt_profile.h: ln 160 
+ 						edits under progress - UART for data transfer from app
+ 						 under progress
+
+ *****************************************************************************
+
  *****************************************************************************/
